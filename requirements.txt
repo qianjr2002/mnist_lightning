@@ -1,0 +1,4 @@
+omegaconf
+loguru
+tensorboard
+pytorch-lightning==2.2.5

@@ -1,0 +1,37 @@
+cmd: train
+version: g1
+root_dir: ${system.log_dir}
+ckpt: null
+
+system:
+  seed: 1234
+  log_dir: logs
+
+data:
+  data_dir: ./datasets
+  batch_size: 128
+  num_workers: 4
+
+model:
+  name: GeneratorOnlyMNIST   # GeneratorOnlyMNIST | GANClassifierMNIST
+  lr: 0.001
+  weight_decay: 0.0
+  num_classes: 10
+
+  gan:
+    adv_weight: 0.2
+    perturb_eps: 0.3
+
+trainer:
+  accelerator: gpu
+  devices: 1
+  max_epochs: 20
+  strategy: auto
+  log_every_n_steps: 10
+  deterministic: true
+
+callbacks:
+  monitor: val_acc
+  mode: max
+  patience: 5
+  save_top_k: 3
