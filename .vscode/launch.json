@@ -12,8 +12,8 @@
             "args": [
                 "cmd=train",
                 "conf=conf/config.yaml",
-                "model.name=Liu2MNIST", // GeneratorOnlyMNIST | GANClassifierMNIST
-                "version=a0"
+                "model.name=GANClassifierMNIST", // GeneratorOnlyMNIST | GANClassifierMNIST
+                "version=c0"
                 // "model.name=GANClassifierMNIST",
                 // "version=g1"
                 // "cmd=test",

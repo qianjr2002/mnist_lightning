@@ -6,7 +6,7 @@ from omegaconf import OmegaConf
 from pytorch_lightning.loggers import TensorBoardLogger
 
 from data.mnist_datamodule import MNISTDataModule
-from models import get_model
+from utils.get_model import get_model
 from utils.callbacks import get_callbacks
 from utils.misc import get_exp_name
 
