@@ -13,7 +13,7 @@ data:
   num_workers: 4
 
 model:
-  name: GeneratorOnlyMNIST   # GeneratorOnlyMNIST | GANClassifierMNIST
+  name: Liu2MNIST   # GeneratorOnlyMNIST | GANClassifierMNIST | Liu2MNIST
   lr: 0.001
   weight_decay: 0.0
   num_classes: 10

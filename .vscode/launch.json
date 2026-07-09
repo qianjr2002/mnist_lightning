@@ -12,8 +12,8 @@
             "args": [
                 "cmd=train",
                 "conf=conf/config.yaml",
-                "model.name=GeneratorOnlyMNIST", // GeneratorOnlyMNIST | GANClassifierMNIST
-                "version=g0"
+                "model.name=Liu2MNIST", // GeneratorOnlyMNIST | GANClassifierMNIST
+                "version=a0"
                 // "model.name=GANClassifierMNIST",
                 // "version=g1"
                 // "cmd=test",
@@ -22,7 +22,7 @@
                 // "ckpt=logs/GANClassifierMNIST/g1/checkpoints/last.ckpt
             ],
             "env": {
-                "CUDA_VISIBLE_DEVICES": "0"
+                "CUDA_VISIBLE_DEVICES": "1"
             }
         }
     ]
