@@ -39,6 +39,7 @@ def train(conf):
         logger=tb_logger,
         callbacks=callbacks,
         **conf.trainer,
+        # accelerator='gpu',devices=1,max_epochs=20,strategy='auto',log_every_n_steps=10,deterministic=True
     )
 
     trainer.fit(model, datamodule=datamodule, ckpt_path=conf.ckpt)
